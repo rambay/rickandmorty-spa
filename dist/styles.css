@@ -223,6 +223,10 @@ body {
   color: white;
 }
 
+.loading p {
+  color: #ff0099;
+}
+
 .Pagination span:hover {
   background-color: #6b44e0;
   color: white;
