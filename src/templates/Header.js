@@ -1,12 +1,12 @@
+import logo from "../../assets/logo.png";
+
 const Header = () => {
   const view = `
     <div class="Header-main">
       <div class="Header-logo">
-        <h1>
-          <a href="/rickandmorty-spa">
-            100tifi.co
-          </a>
-        </h1>
+        <a href="/">
+          <img src="${logo}" alt="Rick and Morty" />
+        </a>
       </div>
       <div class="Header-nav">
         <a href="#/about/">
