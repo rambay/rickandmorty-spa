@@ -22,9 +22,11 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|webp)$/i,
-        loader: "file-loader",
+        loader: "url-loader",
         options: {
-          outputPath: "./assets",
+          limit: 10000,
+          fallback: "file-loader",
+          name: "assets/[name].[hash].[ext]",
         },
       },
     ],
